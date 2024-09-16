@@ -1,4 +1,4 @@
-/* 
+
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:timezone/data/latest.dart' as tz;
@@ -10,13 +10,13 @@ import 'package:timezone/timezone.dart' as tz;
 
 
 class NotificationService {
-  static final NotificationService _notificationService = NotificationService._internal();
+  static final NotificationService _notificationService = NotificationService();
 
   factory NotificationService() {
     return _notificationService;
   }
 
-  NotificationService
+  
   void initialize() {
   final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
    
@@ -88,4 +88,3 @@ class NotificationService {
     await flutterLocalNotificationsPlugin.cancel(id);
   }
 }
- */
